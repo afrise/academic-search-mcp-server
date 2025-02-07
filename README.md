@@ -1,6 +1,17 @@
 # Academic Paper Search MCP Server
 
+
 A [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol) server that enables searching and retrieving academic paper information from multiple sources.
+
+The server provides LLMs with:
+- Real-time academic paper search functionality  
+- Access to paper metadata and abstracts
+- Ability to retrieve full-text content when available
+- Structured data responses following the MCP specification
+
+While primarily designed for integration with Anthropic's Claude Desktop client, the MCP specification allows for potential compatibility with other AI models and clients that support tool/function calling capabilities (e.g. OpenAI's API).
+
+**Note**: This software is under active development. Features and functionality are subject to change.
 
 ## Features
 
