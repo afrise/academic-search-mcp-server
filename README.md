@@ -85,8 +85,29 @@ This server is built using:
 
 ## License
 
-I have one
+This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). This license ensures that:
+
+- You can freely use, modify, and distribute this software
+- Any modifications must be open-sourced under the same license
+- Anyone providing network services using this software must make the source code available
+- Commercial use is allowed, but the software and any derivatives must remain free and open source
+
+See the [LICENSE](LICENSE) file for the full license text.
 
 ## Contributing
 
-I like money
+Contributions are welcome! Here's how you can help:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+Please note:
+- Follow the existing code style and conventions
+- Add tests for any new functionality
+- Update documentation as needed
+- Ensure your changes respect the AGPL-3.0 license terms
+
+By contributing to this project, you agree that your contributions will be licensed under the AGPL-3.0 license.
