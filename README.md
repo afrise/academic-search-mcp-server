@@ -1,0 +1,92 @@
+# Academic Paper Search MCP Server
+
+A Model Context Protocol (MCP) server that enables searching and retrieving academic paper information from multiple sources.
+
+## Features
+
+This server exposes the following tools:
+- `search_papers`: Search for academic papers across multiple sources
+  - Parameters:
+    - `query` (str): Search query text
+    - `limit` (int, optional): Maximum number of results to return (default: 10)
+  - Returns: Formatted string containing paper details
+  
+- `fetch_paper_details`: Retrieve detailed information for a specific paper
+  - Parameters:
+    - `paper_id` (str): Paper identifier (DOI or Semantic Scholar ID)
+    - `source` (str, optional): Data source ("crossref" or "semantic_scholar", default: "crossref")
+  - Returns: Formatted string with comprehensive paper metadata including:
+    - Title, authors, year, DOI
+    - Venue, open access status, PDF URL (Semantic Scholar only)
+    - Abstract and TL;DR summary (when available)
+
+- `search_by_topic`: Search for papers by topic with optional date range filter
+  - Parameters:
+    - `topic` (str): Search query text (limited to 300 characters)
+    - `year_start` (int, optional): Start year for date range 
+    - `year_end` (int, optional): End year for date range
+    - `limit` (int, optional): Maximum number of results to return (default: 10)
+  - Returns: Formatted string containing search results including:
+    - Paper titles, authors, and years
+    - Abstracts and TL;DR summaries when available
+    - Venue and open access information
+
+## Setup
+
+1. Install dependencies:
+```sh
+uv add "mcp[cli]" httpx
+```
+
+2. Set up required API keys in your environment or `.env` file:
+```sh
+#  These are not actually implemented
+SEMANTIC_SCHOLAR_API_KEY=your_key_here 
+CROSSREF_API_KEY=your_key_here  # Optional but recommended
+```
+
+3. Run the server:
+```sh
+uv run server.py
+```
+
+## Usage with Claude Desktop
+
+1. Add the server to your Claude Desktop configuration (`claude_desktop_config.json`):
+```json
+{
+  "mcpServers": {
+    "academic-search": {
+      "command": "uv",
+      "args": ["run ", "/path/to/server/server.py"],
+      "env": {
+        "SEMANTIC_SCHOLAR_API_KEY": "your_key_here",
+        "CROSSREF_API_KEY": "your_key_here"
+      }
+    }
+  }
+}
+```
+
+2. Restart Claude Desktop
+
+
+## Development
+
+This server is built using:
+- Python MCP SDK
+- FastMCP for simplified server implementation
+- httpx for API requests
+
+## API Sources
+
+- Semantic Scholar API
+- Crossref API
+
+## License
+
+I have one
+
+## Contributing
+
+I like money

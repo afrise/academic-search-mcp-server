@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "MCP Inspector",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "args": [
+                "@modelcontextprotocol/inspector", 
+                "uv", 
+                "run", 
+                "G:/code/science/server.py"], 
+            "env": {
+                "PYTHONIOENCODING": "utf-8",
+                "LANG": "en_US.UTF-8"
+            },    
+            "console": "integratedTerminal"
+        }
+    ]
+}
