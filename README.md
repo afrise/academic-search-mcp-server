@@ -1,6 +1,5 @@
 # Academic Paper Search MCP Server
 
-
 A [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol) server that enables searching and retrieving academic paper information from multiple sources.
 
 The server provides LLMs with:
