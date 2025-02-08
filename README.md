@@ -54,6 +54,10 @@ To install Academic Paper Search Server for Claude Desktop automatically via [Sm
 npx -y @smithery/cli install @afrise/academic-search-mcp-server --client claude
 ```
 
+***note*** this method is largely untested, as their server seems to be having trouble. you can follow the standalone instructions until smithery gets fixed. 
+
+### Installing via uv (manual install): 
+
 1. Install dependencies:
 ```sh
 uv add "mcp[cli]" httpx
