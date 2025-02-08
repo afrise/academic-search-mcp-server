@@ -1,0 +1,20 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - semanticScholarApiKey
+    properties:
+      semanticScholarApiKey:
+        type: string
+        description: The API key for Semantic Scholar.
+      crossrefApiKey:
+        type: string
+        description: The API key for Crossref (optional).
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'uv', args: ['run', 'server.py'], env: { SEMANTIC_SCHOLAR_API_KEY: config.semanticScholarApiKey, CROSSREF_API_KEY: config.crossrefApiKey || '' } })
