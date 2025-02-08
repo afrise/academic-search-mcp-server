@@ -1,5 +1,7 @@
 # Academic Paper Search MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@afrise/academic-search-mcp-server)](https://smithery.ai/server/@afrise/academic-search-mcp-server)
+
 A [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol) server that enables searching and retrieving academic paper information from multiple sources.
 
 The server provides LLMs with:
@@ -42,6 +44,15 @@ This server exposes the following tools:
     - Venue and open access information
 
 ## Setup
+
+
+### Installing via Smithery
+
+To install Academic Paper Search Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@afrise/academic-search-mcp-server):
+
+```bash
+npx -y @smithery/cli install @afrise/academic-search-mcp-server --client claude
+```
 
 1. Install dependencies:
 ```sh
