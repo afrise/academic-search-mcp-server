@@ -10,7 +10,7 @@ startCommand:
     properties:
       semanticScholarApiKey:
         type: string
-        description: The API key for Semantic Scholar.
+        description: The API key for Semantic Scholar (Optional).
       crossrefApiKey:
         type: string
         description: The API key for Crossref (optional).
