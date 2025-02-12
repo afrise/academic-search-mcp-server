@@ -14,6 +14,8 @@ While primarily designed for integration with Anthropic's Claude Desktop client,
 
 **Note**: This software is under active development. Features and functionality are subject to change.
 
+<a href="https://glama.ai/mcp/servers/kzsu1zzz9j"><img width="380" height="200" src="https://glama.ai/mcp/servers/kzsu1zzz9j/badge" alt="Academic Paper Search Server MCP server" /></a>
+
 ## Features
 
 This server exposes the following tools:
